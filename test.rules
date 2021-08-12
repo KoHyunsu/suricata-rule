@@ -17,4 +17,4 @@ alert tcp any any -> any 443 (msg:"kitribob.wiki access"; content:"kitribob.wiki
 alert tcp any any -> any 443 (msg:"aws.amazon.com access"; flow:to_server,established; tls.sni; content:"aws.amazon.com"; sid:10017; rev:1;)
 alert tcp any any -> any 443 (msg:"daum.net access"; flow:to_server,established; content:"daum.net"; sid:10018; rev:1;)
 alert tcp any any -> any 80 (msg:"kitri.re.kr access"; content:"kitri.re.kr"; sid:10019; rev:1;)
-alert tcp any any -> any 80 (msg:"acmicpc.net access"; content:"acmicpc.net"; sid:10020; rev:1;)
+alert tcp any any -> any 443 (msg:"everytime.kr access"; content:"everytime.kr"; sid:10020; rev:1;)
